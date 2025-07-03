@@ -6,6 +6,12 @@
   <title>Guides – Party Balloons</title>
   <style>
     body {
+      background-image: url('https://i.imgur.com/LPLmdvR.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #f2f2f2;
       font-family: Arial, sans-serif;
       margin: 20px;
     }
@@ -17,12 +23,16 @@
       text-decoration: none;
       color: #333;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .guide {
       max-width: 800px;
       margin: 30px auto;
       padding: 15px;
       border: 1px solid #ddd;
       border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
     }
     .guide h2 {
       margin-top: 0;
@@ -38,7 +48,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Guides</h1>
     <nav>
@@ -53,12 +62,10 @@
     <!-- Guide 1: Video Tutorial -->
     <section class="guide">
       <h2>How to Download New App (Video)</h2>
-      <!-- We’ll point this to your video file name once it’s added -->
       <video controls>
-  <source src="ibopro.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
+        <source src="ibopro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <p>Follow along with the video above to install and set up your new app.</p>
     </section>
 
@@ -82,6 +89,5 @@
       </ol>
     </section>
   </main>
-
 </body>
 </html>
