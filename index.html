@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Party Balloons</title>
   <style>
+    /* Page background */
     body {
       background-image: url('https://i.imgur.com/LPLmdvR.png');
       background-size: cover;
@@ -19,6 +20,8 @@
       flex-direction: column;
       align-items: center;
     }
+
+    /* Header & nav */
     header {
       background-color: rgba(242,242,242,0.8);
       width: 100%;
@@ -36,13 +39,72 @@
     nav a:hover {
       text-decoration: underline;
     }
-    main {
-      padding: 40px 20px;
+
+    /* Hero banner styles */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       text-align: center;
+      color: white;
+    }
+    .hero-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .btn,
+    .btn-outline {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1em;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .btn {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+    }
+    .btn-outline {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    .btn:hover {
+      background-color: #e73370;
+    }
+    .btn-outline:hover {
+      background-color: white;
+      color: #ff4081;
+    }
+
+    /* Intro text below hero */
+    .intro {
+      padding: 20px;
       background-color: rgba(255,255,255,0.8);
       border-radius: 8px;
-      margin: 20px;
+      margin-bottom: 40px;
       max-width: 800px;
+      text-align: center;
     }
   </style>
 </head>
@@ -58,7 +120,21 @@
   </header>
 
   <main>
-    <p>Your one-stop shop for fun and festive balloon services!</p>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <img src="hero-family-fireplace.jpg" alt="Family watching TV by a fireplace">
+      <div class="hero-text">
+        <h2>Make Every Celebration Pop</h2>
+        <p>Your one-stop shop for fun and festive balloon services!</p>
+        <a href="products.html" class="btn">See Our Services</a>
+        <a href="guides.html" class="btn-outline">Learn How It Works</a>
+      </div>
+    </section>
+
+    <!-- Intro Paragraph -->
+    <section class="intro">
+      <p>Welcome to Party Balloons—bringing joy and color to your events with our expert balloon services. From simple gatherings to grand celebrations, we make every moment pop!</p>
+    </section>
   </main>
 </body>
 </html>
